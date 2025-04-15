@@ -1,26 +1,159 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+body{
+  font-family: 'Mulish', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.linearGrad{
+  background-image: linear-gradient(to bottom, #f17d01, #e36611, #d34f19, #c1391e, #ae2120);
+}
+
+.herosec{
+ height: 80px;
+}
+
+.Car{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+.hero1-text{
+  margin-left: 80px;
+}
+
+.details{
+  margin-top: 50px;
+}
+
+.grid-details{
+  margin-left: 10%;
+  padding-block: 25px;
+}
+
+.heading-details{
+  padding-top: 25px;
+}
+
+.img-details{
+  margin-left: 25px;
+}
+
+.insurance{
+  margin-block: 50px;
+}
+
+.swapper{
+  display: flex;
+  margin-inline: 10% ;
+}
+
+.swapper-img{
+  margin-left: 10%;
+}
+
+.swapper-content{
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+.swapper-left-arrow{
+  cursor: pointer;
+}
+.swapper-right-arrow{
+  cursor: pointer;
+}
+
+.third-party{
+  margin-left: 10%;
+}
+
+.third-paryty-text{
+  padding-block: 25px;
+}
+
+.online-card{
+  height: 200px;
+}
+
+.included {
+  padding-block: 25px;
+  padding-inline: 150px;
+}
+
+.container{
+  margin-inline: auto;
+  overflow: hidden;
+  max-width: 1440px;
+}
+
+
+@media screen and (max-width: 1024px) {
+  .hero1{
+    display: flex;
+    flex-direction: row;
+  }
+  .hero1-img{
+    display: none;
+  }
+  .hero3{
+    margin-inline: 0;
+  }
+  
+  .options-hidden{
+    display: none;
+  }
+  
+  .insurance{
+    flex-direction: column;
+  }
+  .swapper{
+    flex-direction: column;
+  }
+  .swapper-img{
+    margin-top: 25px;
+  }
+  
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .NavUpperLine{
+    flex-direction: column;
+  }
+  .options-hidden{
+    display: none;
+  }
+
+  .included{
+    padding-inline: 75px;
+  }
+
+  .premium-flex{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+
+@media screen and (max-width: 500px) {
+  .NavUpperLine-left{
+    display: none;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@media screen and (max-width:450px) {
+  .swapper{
+    margin-inline: 0;
+  }
+  .included{
+    padding-inline: 35px;
+  }
 }
