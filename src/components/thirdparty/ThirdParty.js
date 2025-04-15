@@ -78,7 +78,7 @@ const ThirdParty = () => {
         </div>
 
         <div className="flex justify-center items-center third-paryty-text container">
-          <div className="w-6/10 text-justify">
+          <div className="w-8/10 md:w-6/10 text-justify">
             <p>
               Comprehensive car insurance is a more comprehensive policy that
               covers not only third-party liabilities but also damage to your
