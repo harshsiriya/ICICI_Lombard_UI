@@ -13,7 +13,7 @@ const Hero = () => {
       {/* Left Content */}
       <div className="w-full lg:w-[35%] flex flex-col gap-18 hero1">
         <div style={{marginLeft : "10px"}}>
-          <h1 className="text-6xl font-extrabold text-gray-900" style={{paddingBottom : "10px"}}>Car insurance</h1>
+          <h1 className="text-6xl font-bold text-gray-900" style={{paddingBottom : "10px"}}>Car insurance</h1>
           <h2 className="text-2xl font-semibold text-gray-900 mt-2" style={{paddingBottom : "10px"}}>
             Prices starting at just ₹2,094/yr
           </h2>
