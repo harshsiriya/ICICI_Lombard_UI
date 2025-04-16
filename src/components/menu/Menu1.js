@@ -66,4 +66,4 @@ const Menu1 = ({option}) => {
   );
 };
 
-export default Menu1;
+export default Menu1; 
