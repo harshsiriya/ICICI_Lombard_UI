@@ -10,7 +10,7 @@ const Menu2 = ({ option }) => {
           {option}
           <ChevronDownIcon
             aria-hidden="true"
-            className="-mr-1 size-4 text-white "
+            className="-mr-1 size-5 text-white "
           />
         </MenuButton>
       </div>

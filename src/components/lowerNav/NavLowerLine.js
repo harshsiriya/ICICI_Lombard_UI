@@ -29,9 +29,9 @@ const NavLowerLine = () => {
 
         {/* Desktop Login Button */}
         <div className="hidden lg:flex items-center" style={{marginRight : "20px"}}>
-          <button className="text-white text-xs flex items-center gap-1 mr-4">
+          <button className="text-white text-sm flex items-center gap-1 mr-4">
             Login
-            <ChevronRightIcon className="size-4 text-white" />
+            <ChevronRightIcon className="size-5 text-white" />
           </button>
         </div>
 
