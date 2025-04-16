@@ -11,7 +11,7 @@ const NavLowerLine = () => {
   return (
     <div className="flex flex-col w-full linearGrad">
       {/* Main Nav Bar */}
-      <div className="flex justify-between items-center h-16 px-4 lg:px-12 w-full max-w-[1440px]" style={{marginInline:"auto"}}>
+      <div className="flex justify-between items-center h-15 px-4 lg:px-12 w-full max-w-[1440px]" style={{marginInline:"auto"}}>
         {/* Logo + Desktop Menu */}
         <div className="flex gap-4 lg:gap-12 items-center">
           <Image src={logo} alt="Logo" width={150} height={75} className="ml-2" />
@@ -29,9 +29,9 @@ const NavLowerLine = () => {
 
         {/* Desktop Login Button */}
         <div className="hidden lg:flex items-center" style={{marginRight : "20px"}}>
-          <button className="text-white flex items-center gap-1 mr-4">
+          <button className="text-white text-xs flex items-center gap-1 mr-4">
             Login
-            <ChevronRightIcon className="size-5 text-white" />
+            <ChevronRightIcon className="size-4 text-white" />
           </button>
         </div>
 
@@ -55,9 +55,9 @@ const NavLowerLine = () => {
           <Menu2 option="Other Insurance" />
           <Menu2 option="Claims" />
           {/* Mobile Login Button */}
-          <button className="white flex items-center justify-center gap-1 hover:text-orange-600">
+          <button className="white flex items-center justify-center gap-1 text-xs  hover:text-orange-600">
             Login
-            <ChevronRightIcon className="size-5 text-white" />
+            <ChevronRightIcon className="size-5 text-white text-xs" />
           </button>
         </div>
       )}

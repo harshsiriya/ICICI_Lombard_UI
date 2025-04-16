@@ -46,7 +46,7 @@ body{
 }
 
 .insurance{
-  margin-block: 50px;
+  margin-block: 72px;
 }
 
 .swapper{
@@ -79,7 +79,7 @@ body{
 }
 
 .online-card{
-  height: 200px;
+  height: 240px;
 }
 
 .included {
@@ -104,6 +104,15 @@ body{
   }
   .hero3{
     margin-inline: 0;
+  }
+
+  .swapper-mq{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .swapper-mq1{
+    margin-bottom: 50px;
   }
   
   .options-hidden{
@@ -134,6 +143,17 @@ body{
 
   .included{
     padding-inline: 75px;
+  }
+
+  .swapper-mq1{
+    margin-inline: 25px;
+  }
+  .swapper-mq2{
+    padding-top: 25px;
+  }
+
+  .swapper-mq{
+    padding-inline: 25px;
   }
 
   .premium-flex{

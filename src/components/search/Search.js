@@ -30,16 +30,16 @@ const tags = [
 
 const Search = () => {
   return (
-    <div className='bg-[#F8F6F6] '>
-    <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-12 container included" style={{marginTop: '2.5rem'}}>
+    <div className='bg-[#F8F6F6] h-auto xl:h-[422px] flex flex-col justify-center items-center '>
+    <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-12 container" style={{marginTop: '2.5rem'}}>
       {/* Left Image */}
-      <div className="mb-8 md:mb-0 md:w-1/3 flex justify-center">
+      <div className="mb-8 md:mb-0 md:w-[25%] flex justify-center">
         <Image src={search} alt="search illustration" width={250} height={250} style={{paddingTop : "1rem"}}/>
       </div>
 
       {/* Right Content */}
-      <div className="md:w-2/3">
-        <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center md:text-left" style={{paddingBlock: '2rem', paddingInline : "2rem"}}>
+      <div className="md:w-[75%]">
+        <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-center md:text-left" style={{paddingBlock: '1rem', paddingInline : "2rem"}}>
           Popular Searches
         </h2>
 

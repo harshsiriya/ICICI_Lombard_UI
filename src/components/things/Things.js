@@ -36,15 +36,15 @@ const Things = () => {
   ]
 
   return (
-    <div className="p-6 md:p-10  bg-[#F8F6F6] w-full">
+    <div className="p-6 md:p-10  bg-[#F8F6F6] w-full h-auto lg:h-[700px] flex flex-col items-center justify-center">
       <div className='container w-[93%]'>
-      <h2 className="text-xl md:text-2xl font-semibold text-center " style={{paddingTop : "3rem", paddingBottom : "2rem"}}>
+      <h2 className="text-2xl md:text-4xl  text-center " style={{paddingTop : "3rem", paddingBottom : "3.5rem"}}>
         Things to keep in mind while buying a car insurance policy
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1 gap-8 items-center w-full" style={{paddingBottom : "1.5rem"}}>
         {tips.map((tip, index) => (
-          <div key={index} className="bg-white shadow-sm rounded-lg p-5 flex gap-6 items-center">
+          <div key={index} className="bg-white shadow-sm rounded-lg p-5 flex gap-6 items-center h-[187px]">
             <Image src={tip.icon} alt="icon" width={50} height={50} style={{paddingLeft: "25px"}} />
             <div style={{paddingRight : "25px"}}>
               <h4 className="font-semibold mb-1 text-gray-900" style={{paddingBlock : "0.5rem"}}>{tip.title}</h4>

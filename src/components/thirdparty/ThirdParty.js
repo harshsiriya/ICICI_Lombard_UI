@@ -3,8 +3,8 @@ import React from "react";
 const ThirdParty = () => {
   return (
     <div>
-      <div className="flex flex-col text-center  w-[80%] third-party">
-        <h1 className="text-xl md:text-2xl sm:text-4xl font-bold third-paryty-text" style={{paddingTop:"2.5rem"}}>
+      <div className="flex flex-col text-center justify-center gap-4 h-auto lg:h-[880px] w-[80%] third-party">
+        <h1 className="text-xl md:text-4xl sm:text-2xl font-medium third-paryty-text" style={{paddingTop:"2rem"}}>
           Comprehensive car insurance vs Third party car insurance
         </h1>
 
@@ -16,15 +16,15 @@ const ThirdParty = () => {
                   <table className="w-full border-collapse">
                     <thead>
                       <tr className="bg-[#E1E0D1] text-left">
-                        <th className="px-4 py-4 font-semibold border-r border-white" style={{paddingInline:"10px", paddingBlock:"10px"}}>
+                        <th className="px-4 py-4 text-gray-700 border-r text-lg border-white" style={{paddingInline:"10px", paddingBlock:"20px"}}>
                           Comprehensive Car Insurance
                         </th>
-                        <th className="px-4 py-4 font-semibold" style={{paddingInline:"10px", paddingBlock:"10px"}}>
+                        <th className="px-4 py-4 text-gray-700 text-lg" style={{paddingInline:"10px", paddingBlock:"20px"}}>
                           Third-Party Car Insurance
                         </th>
                       </tr>
                     </thead>
-                    <tbody className="text-start text-gray-800" >
+                    <tbody className="text-start text-gray-900" >
                       <tr className="bg-[#F5F6F6]">
                         <td className="px-4 py-4 border-r border-white" style={{paddingInline:"10px", paddingBlock:"10px"}}>
                           Covers damages to your own car and third-party
@@ -78,7 +78,7 @@ const ThirdParty = () => {
         </div>
 
         <div className="flex justify-center items-center third-paryty-text container">
-          <div className="w-8/10 md:w-6/10 text-justify">
+          <div className="w-8/10 md:w-6/10 text-justify text-gray-700">
             <p>
               Comprehensive car insurance is a more comprehensive policy that
               covers not only third-party liabilities but also damage to your

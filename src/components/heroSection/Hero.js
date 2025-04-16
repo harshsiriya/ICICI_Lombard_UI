@@ -8,51 +8,51 @@ const Hero = () => {
 
 
   return (
-    <section className="flex flex-col lg:flex-row items-center justify-between px-6 py-10 bg-white mx-auto gap-6 container" style={{marginTop : "50px"}}>
+    <section className="flex flex-col lg:flex-row items-center h-[95%] max-h-screen justify-between px-6 py-10 bg-white mx-auto gap-6 container" style={{marginTop : "50px", paddingBottom : "50px"}}>
       
       {/* Left Content */}
-      <div className="w-full lg:w-1/3 flex flex-col gap-12 hero1">
+      <div className="w-full lg:w-[35%] flex flex-col gap-18 hero1">
         <div style={{marginLeft : "10px"}}>
-          <h1 className="text-4xl font-extrabold text-gray-900">Car insurance</h1>
-          <h2 className="text-xl font-semibold text-gray-900 mt-2">
+          <h1 className="text-6xl font-extrabold text-gray-900" style={{paddingBottom : "10px"}}>Car insurance</h1>
+          <h2 className="text-2xl font-semibold text-gray-900 mt-2" style={{paddingBottom : "10px"}}>
             Prices starting at just ₹2,094/yr
           </h2>
-          <p className="text-xs text-gray-500 mt-1">
+          <h5 className="text-sm text-gray-500 mt-1">
             This amount refers to the TP rates only
-          </p>
+          </h5>
         </div>
 
         {/* Features */}
         <div className='hero1-img'>
-            <Image src={imageGroup} alt="img" style={{marginLeft : "10px"}} width={600} height={600} className='md:w-3xl' draggable={false} />
+            <Image src={imageGroup} alt="img" style={{marginLeft : "10px"}} width={600} height={800} className='md:w-3xl' draggable={false} />
         </div>
       </div>
 
       {/* Middle Image */}
-      <div className="w-full lg:w-1/2 flex justify-center my-8 lg:my-0">
+      <div className="w-full lg:w-[30%] flex justify-center my-8 lg:my-0">
         <Image src={carimg} alt="Car" width={400} height={500} draggable={false}/>
       </div>
 
       {/* Right Form */}
-      <div className='w-full lg:w-1/3 bg-white border border-none hero3' style={{paddingInline:"10px"}}>
-      <div className=" shadow-md rounded-md" style={{padding:"25px"}}>
-        <form className="flex flex-col gap-4">
+      <div className='w-full lg:w-[35%] bg-white border border-none hero3' style={{paddingInline:"10px"}}>
+      <div className=" rounded-md border border-gray-300" style={{padding:"25px"}}>
+        <form className="flex flex-col gap-8">
           <input
             type="text"
             placeholder="Car registration no."
-            className="border border-gray-300 rounded-md px-4 py-2 text-sm h-[50px]"
+            className="border border-gray-300 rounded-md px-4 py-2 text-sm h-[53px]"
             style={{paddingInline : "10px"}}
           />
           <input
             type="text"
             placeholder="Mobile no."
-            className="border border-gray-300 rounded-md px-4 py-2 text-sm h-[50px]"
+            className="border border-gray-300 rounded-md px-4 py-2 text-sm h-[53px]"
             style={{paddingInline : "10px"}}
           />
           <input
             type="email"
             placeholder="Email"
-            className="border border-gray-300 rounded-md px-4 py-2 text-sm h-[50px]"
+            className="border border-gray-300 rounded-md px-4 py-2 text-sm h-[53px]"
             style={{paddingInline : "10px"}}
           />
           <button

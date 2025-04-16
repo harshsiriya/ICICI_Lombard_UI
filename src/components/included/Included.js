@@ -45,13 +45,13 @@ const Included = () => {
   ];
 
   return (
-    <div className="p-6 md:p-10 w-[93%] container">
-      <h2 className="text-2xl md:text-3xl  text-center mb-6" style={{ paddingTop : "2.5rem", paddingBottom : "1.5rem" }}>
+    <div className=" w-[93%] flex flex-col items-center justify-center container h-auto lg:h-[620px]">
+      <h2 className="text-2xl md:text-3xl lg:text-5xl  text-center mb-6" style={{ paddingTop : "1rem", paddingBottom : "2.5rem" }}>
         Whats included and whats not?
       </h2>
 
       {/* Tabs */}
-      <div className="flex border-b border-gray-300 mb-6 gap-10">
+      <div className="flex border-b border-gray-300 mb-6 gap-10 w-full" >
         <button
           onClick={() => setActiveTab('inclusions')}
           className={`px-4 py-2 font-medium cursor-pointer ${
@@ -77,31 +77,32 @@ const Included = () => {
       {/* Tab Content */}
       {activeTab === 'inclusions' && (
         <>
-          <h3 className="text-lg font-semibold mb-4" style={{ paddingBlock: '1rem'}}>
+          <h3 className="text-lg font-semibold mb-4 text-start w-full" style={{ paddingTop: '2.5rem', paddingBottom: "2rem"}}>
             Whats included:
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-8 mb-8 w-full">
             {inclusions.map((item, index) => (
-              <div key={index} className="flex items-start gap-2">
+              <div key={index} className="flex items-start gap-2 text-lg">
                 {/* <CheckCircle className="text-green-500 mt-1" size={17} /> */}
-                <Image src={correct} alt='' style={{paddingTop:"4px"}}/>
-                <span className="text-gray-700">{item}</span>
+                <Image src={correct} alt='' style={{paddingTop:"12px"}}/>
+                <span className="text-gray-700 " style={{paddingTop : "6px"}}>{item}</span>
               </div>
             ))}
           </div>
+          <br/>
           <br/>
         </>
       )}
 
       {activeTab === 'exclusions' && (
         <>
-          <h3 className="text-lg font-semibold mb-4" style={{ paddingBlock: '1rem'}}>
+          <h3 className="text-lg font-semibold mb-4  w-full" style={{ paddingTop: '2.5rem', paddingBottom: "2rem"}}>
             Whats not included:
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-8 mb-8  w-full">
             {exclusions.map((item, index) => (
-              <div key={index} className="flex items-start gap-2">
-                <XCircle className="text-red-500 mt-1" size={20} style={{paddingTop:"4px"}}/>
+              <div key={index} className="flex items-start gap-2 text-lg">
+                <XCircle className="text-red-500 mt-1" size={20} style={{paddingTop:"6px"}}/>
                 <span className="text-gray-700">{item}</span>
               </div>
             ))}
@@ -111,7 +112,7 @@ const Included = () => {
       )}
 
       {/* Policy Links */}
-      <div className="flex flex-col lg:flex-row border-t pt-4 gap-3 text-center lg:text-start" style={{ paddingBlock: '20px' }}>
+      <div className="flex flex-col lg:flex-row border-t border-slate-400 pt-4 gap-3 text-center lg:text-start w-full" style={{ paddingBlock: '3rem' }}>
         <p className="text-sm text-gray-600 mb-2 font-medium">Policy documents:</p>
         <div className="flex flex-wrap gap-6 text-sm">
           {policyLinks.map((link, i) => (

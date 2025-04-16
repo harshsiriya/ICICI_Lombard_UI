@@ -74,14 +74,15 @@ const Answer = () => {
   const [activeTab, setActiveTab] = useState('General')
 
   return (
-    <div className="p-6 md:p-10 w-full bg-[#F8F6F6]" style={{paddingBottom : "1.5rem"}}>
+    <div className="p-6 md:p-10 w-full bg-[#F8F6F6] flex flex-col justify-center items-center h-auto xl:h-[1500px]" style={{paddingBottom : "1.5rem"}}>
       <div className='container w-[93%]'>
-      <h2 className="text-2xl md:text-3xl text-center mb-8" style={{paddingTop : "3rem",paddingBottom:"2rem"}}>
+      <h2 className="text-xl md:text-3xl xl:text-4xl text-center mb-8" style={{paddingBottom:"4rem", paddingTop:"4rem"}}>
         Get answers to common questions about car insurance policy
       </h2>
 
-      {/* Tabs */}
-      <div className="flex justify-start border-b border-gray-300 mb-6 space-x-6 overflow-auto" >
+      <div className='w-full flex flex-col items-center' >
+         {/* Tabs */}
+      <div className="flex justify-start border-b border-gray-300 mb-6 space-x-6 overflow-auto w-[85%] md:w-[60%]">
         {tabs.map((tab) => (
           <button 
             key={tab}
@@ -99,20 +100,20 @@ const Answer = () => {
       </div>
 
       {/* FAQ Content */}
-      <div className="space-y-8 text-justify" style={{paddingInline: "25px"}}>
+      <div className="space-y-8 text-justify w-[85%] md:w-[60%]" style={{paddingInline: "25px", paddingBottom:"20px"}}>
         {faqData[activeTab].length === 0 ? (
           <p className="text-gray-600">Content coming soon...</p>
         ) : (
           faqData[activeTab].map((faq, index) => (
             <div key={index}>
-              <h3 className="text-md md:text-lg font-semibold text-gray-900 mb-1" style={{marginTop: "1rem"}}>
+              <h3 className="text-md md:text-lg font-semibold text-gray-700 mb-1" style={{marginTop: "1.5rem"}}>
                 {faq.question}
               </h3>
-              <div ><p className="text-gray-700 text-sm md:text-base">{faq.answer}</p></div>
+              <div ><p className="text-gray-500 text-sm md:text-base leading-7">{faq.answer}</p></div>
               {faq.list && (
                 <ul className="mt-3 list-none space-y-1 pl-4">
                   {faq.list.map((item, i) => (
-                    <li key={i} className="text-sm text-gray-700 flex gap-2">
+                    <li key={i} className="text-sm text-gray-700 flex gap-2 leading-7">
                       <span className="text-gray-500">→</span> {item}
                     </li>
                   ))}
@@ -121,6 +122,7 @@ const Answer = () => {
             </div>
           ))
         )}
+      </div>
       </div>
       </div>
     </div>

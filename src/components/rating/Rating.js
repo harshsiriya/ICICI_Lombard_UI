@@ -13,25 +13,25 @@ const reviews = [
     name: 'Kumar Ambuj',
     ratingImg: star1,
     description:
-      'The interaction was good. The customer service associate gave me answers to all my queries...',
+      'The interaction was good. The customer service associate gave me answers to all my queries. Her presence while making the decision to buy was helpful. I will definitely recommend ICICI Lombard to my friends and family for the way they treat customers.',
   },
   {
     name: 'Sanjay Achliya',
     ratingImg: star2,
     description:
-      "Very good experience. The executive gave me all the information clearly and didnt mind repeating...",
+      "Very good experience. The agent gave me all the information clearly and didnt mind repeating certain points until I understood motiv. I dont fully get technology, but she offered to take care of the whole process of buying the car insurance policy without any hassle.",
   },
   {
     name: 'Priya Sharma',
     ratingImg: star1,
     description:
-      'Quick and seamless experience. The team guided me perfectly...',
+      'The interaction was good. The customer service associate gave me answers to all my queries. Her presence while making the decision to buy was helpful. I will definitely recommend ICICI Lombard to my friends and family for the way they treat customers.',
   },
   {
     name: 'Raj Verma',
     ratingImg: star2,
     description:
-      'Very professional service. I am impressed by the way the process was handled end-to-end...',
+      'Very good experience. The agent gave me all the information clearly and didnt mind repeating certain points until I understood motiv. I dont fully get technology, but she offered to take care of the whole process of buying the car insurance policy without any hassle.',
   },
 ];
 
@@ -72,15 +72,15 @@ const Rating = () => {
   });
 
   return (
-    <div className="px-4 md:px-12 py-12 text-center included">
-      <h2 className="text-3xl md:text-4xl font-semibold" style={{paddingBlock : "1rem"}}>Ratings and Reviews</h2>
+    <div className="px-4 md:px-12 py-12 text-center h-auto lg:h-[682px] flex flex-col justify-center items-center">
+      <h2 className="text-3xl md:text-4xl" style={{paddingBottom : "1rem", marginTop : "4rem"}}>Ratings and Reviews</h2>
 
 
       <div className="flex justify-center items-center" style={{ paddingBottom: '1rem' }}>
         <div className="flex items-center space-x-4 pr-6">
-          <h4 className="text-2xl border-r-1 border-r-slate-400" style={{paddingRight: "0.5rem"}}>4.6 ⭐</h4>
-          <div className="text-left" style={{ paddingLeft: '0.5rem' }}>
-            <p className="text-sm text-black">
+          <h4 className="text-2xl border-r-1 border-r-slate-400" style={{paddingRight: "1rem"}}>4.6 ⭐</h4>
+          <div className="text-left" style={{ paddingLeft: '1rem' }}>
+            <p className="text-sm text-black">  
               Our customers have rated us<br />
               <span className='text-slate-400'>Based on 456 reviews</span>
             </p>
@@ -102,6 +102,7 @@ const Rating = () => {
         <div
           {...swipeHandlers}
           className="bg-white p-6 max-w-3xl w-full touch-pan-x transition-all duration-500 ease-in-out"
+          style={{paddingBlock: "3rem"}}
         >
           <div
             className={`grid gap-8 ${
@@ -109,13 +110,15 @@ const Rating = () => {
             }`}
           >
             {reviews.slice(currentIndex, currentIndex + reviewsPerPage).map((review, idx) => (
-              <div key={idx} className="text-left space-y-4">
+              <div key={idx} className="text-left flex flex-col gap-4">
                 <div className="flex items-center justify-between space-x-4">
-                  <p className="font-bold text-lg border-r border-0.5-slate-50" style={{paddingRight : "10px"}}>{review.name}</p>
+                  <div className='flex gap-2'>
+                  <p className="font-bold text-xl text-gray-700 border-r border-0.5-slate-50" style={{paddingRight : "10px"}}>{review.name}</p>
                   <Image src={review.ratingImg} alt="stars" width={80} height={16} />
-                  <Image src={quote} alt="quote" width={20} height={20} />
+                  </div>
+                  <Image src={quote} alt="quote" width={65} height={65} />
                 </div>
-                <p className="text-gray-700 text-sm">{review.description}</p>
+                <p className="text-gray-700 text-md">{review.description}</p>
               </div>
             ))}
           </div>
@@ -131,14 +134,15 @@ const Rating = () => {
         </button>
       </div>
 
-      <div className="flex flex-col items-center pt-6">
-        <div className="flex gap-2">
+      <div className="flex flex-col items-center pt-6" >
+        <div className="flex gap-2" style={{paddingBottom : "2rem"}}>
           {Array.from({ length: Math.ceil(reviews.length / reviewsPerPage) }).map((_, i) => (
             <span
               key={i}
               className={`h-2 w-2 rounded-full ${
                 i * reviewsPerPage === currentIndex ? 'bg-orange-500' : 'bg-gray-300'
               }`}
+              
             />
           ))}
         </div>

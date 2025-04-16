@@ -21,9 +21,9 @@ const models = [
 
 const Models = () => {
   return (
-    <div className="bg-[#00305B] w-full text-white py-12 px-6 md:px-12">
-        <div  className='w-[93%] container'>
-      <h2 className="text-2xl md:text-3xl font-semibold text-center" style={{paddingTop:"1.5rem",  paddingBottom: '0.75rem', paddingInline : "2rem"}}>
+    <div className="bg-[#00305B] w-full h-auto lg:h-[400px] flex flex-col justify-center items-center text-white py-12 px-6 md:px-12">
+        <div  className='w-[93%] container flex flex-col gap-3 lg:gap-6'>
+      <h2 className="text-2xl lg:text-4xl font-semibold text-center" style={{paddingTop:"1.5rem",  paddingBottom: '0.75rem', paddingInline : "2rem"}}>
         Car Insurance for Popular Models in India
       </h2>
 
@@ -31,11 +31,11 @@ const Models = () => {
         {models.map((model, index) => (
           <div
             key={index}
-            className="bg-white text-black rounded-xl px-4 py-5 flex items-center gap-4 shadow hover:scale-105 transition-transform duration-300"
+            className="bg-white text-black h-auto lg:h-[78px] rounded-xl px-4 py-5 flex items-center gap-4 shadow hover:scale-105 transition-transform duration-300"
             style={{padding : "0.5rem"}}
           >
             <div className="w-20 h-14 flex-shrink-0">
-              <Image src={model.img} alt={model.label} width={80} height={56} />
+              <Image src={model.img} alt={model.label} width={90} height={90} style={{paddingTop: "0.3rem"}}/>
             </div>
             <p className="text-sm font-medium">{model.label}</p>
           </div>

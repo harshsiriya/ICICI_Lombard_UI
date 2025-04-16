@@ -51,14 +51,14 @@ const Premium = () => {
   ]
 
   return (
-    <div className="p-6 md:p-10 container w-[93%]">
-      <h2 className="text-2xl md:text-3xl font-semibold text-center mb-8" style={{paddingBottom:"1.5rem", paddingTop : "3rem"}}>
+    <div className="p-6 md:p-10 container w-[93%] h-auto xl:h-[790px] flex flex-col items-center justify-center gap-6">
+      <h2 className="text-2xl md:text-4xl  text-center mb-8" style={{paddingBottom:"3rem"}}>
         How is car insurance premium calculated?
       </h2>
 
       <div className='flex gap-12 premium-flex'  style={{paddingBottom:"1.5rem"}}>
       <div className='flex-1'>
-      <p className="text-gray-700 font-medium mb-4">
+      <p className="text-gray-700 text-xl  font-bold mb-4">
         Your car insurance premium includes three major components:
       </p>
 
@@ -67,26 +67,26 @@ const Premium = () => {
       <div className="space-y-6 mb-10">
         <div className="flex items-start gap-3">
           <div className="text-orange-600 font-bold text-3xl">1</div>
-          <p className="text-gray-700">
-            <span className="font-medium">Third-party liability premium</span> this is stipulated by the Insurance Regulatory and Development Authority of India (IRDAI), and it is directly proportional to your cars cubic capacity.
+          <p className="text-gray-700" style={{paddingBottom : "12px"}}>
+            <span className="font-medium  ">Third-party liability premium</span> this is stipulated by the Insurance Regulatory and Development Authority of India (IRDAI), and it is directly proportional to your cars cubic capacity.
           </p>
         </div>
 
         <br/>
 
         {/* Table */}
-        <div className="overflow-x-auto" style={{paddingLeft : "25px"}}>
-  <table className="w-full mt-4 border border-gray-200 rounded-md overflow-hidden text-sm">
+        <div className="overflow-x-auto" style={{paddingLeft : "25px", paddingBottom : "12px"}}>
+  <table className="w-full mt-4 border border-gray-200 rounded-md overflow-hidden text-sm ">
     <thead className="bg-gray-100 text-left">
       <tr>
         <th
-          className="px-4 py-2 bg-[#E1E0D1] border-r border-white"
+          className="text-slate-700 px-4 py-2 bg-[#E1E0D1] border-r border-white text-md "
           style={{ paddingInline: '10px',paddingBlock: '10px'  }}
         >
           Cubic capacity
         </th>
         <th
-          className="px-4 py-2 border-b border-gray-200 bg-[#E1E0D1]"
+          className="text-slate-700 px-4 py-2 border-b border-gray-200 bg-[#E1E0D1] text-md "
           style={{ paddingInline: '10px', paddingBlock: '10px' }}
         >
           Premium with effect from <br className="hidden md:block" /> 1st June 2022 (₹)
@@ -113,7 +113,7 @@ const Premium = () => {
 
         <div className="flex items-start gap-3">
           <div className="text-orange-600 font-bold text-3xl">2</div>
-          <p className="text-gray-700">
+          <p className="text-gray-700"  style={{paddingBottom : "12px"}}>
           <span className="font-medium">Third-party liability premium</span> this is stipulated by the Insurance Regulatory and Development Authority of India (IRDAI), and it is directly proportional to your cars cubic capacity.
           </p>
         </div>
@@ -122,7 +122,7 @@ const Premium = () => {
 
         <div className="flex items-start gap-3">
           <div className="text-orange-600 font-bold text-3xl">3</div>
-          <p className="text-gray-700">
+          <p className="text-gray-700 "  style={{paddingBottom : "12px"}}>
           <span className="font-medium">Third-party liability premium</span> this is stipulated by the Insurance Regulatory and Development Authority of India (IRDAI), and it is directly proportional to your cars cubic capacity.
           </p>
         </div>
@@ -134,8 +134,8 @@ const Premium = () => {
           <div key={index} className="flex items-start gap-3">
             <div className="text-gray-500 mt-1">→</div>
             <div>
-              <h4 className="font-semibold text-gray-900">{factor.title}</h4>
-              <p className="text-sm text-gray-700" style={{marginBottom: "1rem"}}>{factor.description}</p>
+              <h4 className="font-semibold text-gray-700">{factor.title}</h4>
+              <p className="text-sm text-gray-700" style={{marginBottom: "0.5rem", paddingBottom :"12px"}}>{factor.description}</p>
             </div>
           </div>
         ))}

@@ -7,11 +7,11 @@ const Menu1 = ({option}) => {
     < >
       <Menu as="div" className="relative inline-block text-left">
         <div>
-          <MenuButton className="inline-flex w-full justify-center gap-x-1.5  bg-transparent px-3 py-2 text-sm font-semibold text-gray-900  border-none  ring-inset hover:bg-gray-50">
+          <MenuButton className="inline-flex w-full justify-center gap-x-1.5  bg-transparent px-3 py-2 text-sm font-semibold text-slate-500 border-none  ring-inset hover:bg-gray-50">
             {option}
             <ChevronDownIcon
               aria-hidden="true"
-              className="-mr-1 size-5 text-black"
+              className="-mr-1 size-5 text-slate-500"
             />
           </MenuButton>
         </div>
