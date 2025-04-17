@@ -17,7 +17,7 @@ import ThirdParty from "@/components/thirdparty/ThirdParty";
 export default function Home() {
   return (
     <>
-        <div className='w-full'>
+        <div className='w-full font-mulish'>
           <Hero />
           <Details />
           <Insurance />
@@ -32,6 +32,8 @@ export default function Home() {
           <Search />
           <Models />
           <Table />
+
+          
           
         </div>
         

@@ -14,7 +14,7 @@ const Details = () => {
         {/* Box 1 */}
         <div className='bg-white rounded-lg h-[100px]  flex items-center gap-4 px-4'>
           <Image src={location} alt='Location Icon' width={40} height={40} className='img-details ' />
-          <div className='text-center flex-4'>
+          <div className='text-start flex-4'>
           <h1 className=' text-lg font-large text-orange-500'>6100+ garages</h1>
           <p className=' text-sm font-medium'>24/7 customer support</p>
           </div>
@@ -23,8 +23,8 @@ const Details = () => {
         {/* Box 2 */}
         <div className='bg-white rounded-lg h-[100px] flex items-center gap-4 px-4'>
           <Image src={motor} alt='Instant Motor Icon' width={40} height={40} className='img-details' />
-          <div className='text-center flex-4'>
-          <h1 className=' text-lg font-large text-orange-500'>6100+ garages</h1>
+          <div className='text-start flex-4'>
+          <h1 className=' text-lg font-large text-orange-500'>Instant motor claims</h1>
           <p className=' text-sm font-medium'>24/7 customer support</p>
           </div>
         </div>
@@ -32,8 +32,8 @@ const Details = () => {
         {/* Box 3 */}
         <div className='bg-white rounded-lg h-[100px] flex items-center gap-4 px-4'>
           <Image src={customer} alt='Customer Support Icon' width={40} height={40} className='img-details' />
-          <div className='text-center flex-4'>
-          <h1 className=' text-lg font-large text-orange-500'>6100+ garages</h1>
+          <div className='text-start flex-4'>
+          <h1 className=' text-lg font-large text-orange-500'>Reliable customer support</h1>
           <p className=' text-sm font-medium'>24/7 customer support</p>
           </div>
         </div>

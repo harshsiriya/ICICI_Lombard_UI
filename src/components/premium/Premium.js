@@ -58,7 +58,7 @@ const Premium = () => {
 
       <div className='flex gap-12 premium-flex'  style={{paddingBottom:"1.5rem"}}>
       <div className='flex-1'>
-      <p className="text-gray-700 text-xl  font-bold mb-4">
+      <p className=" text-[#282828]  font-bold mb-4" style={{fontSize : "18px"}}>
         Your car insurance premium includes three major components:
       </p>
 
@@ -67,7 +67,7 @@ const Premium = () => {
       <div className="space-y-6 mb-10">
         <div className="flex items-start gap-3">
           <div className="text-orange-600 font-bold text-3xl">1</div>
-          <p className="text-gray-700" style={{paddingBottom : "12px"}}>
+          <p className="text-[#282828]" style={{paddingBottom : "12px", fontSize: "16px"}}>
             <span className="font-medium  ">Third-party liability premium</span> this is stipulated by the Insurance Regulatory and Development Authority of India (IRDAI), and it is directly proportional to your cars cubic capacity.
           </p>
         </div>
@@ -80,13 +80,13 @@ const Premium = () => {
     <thead className="bg-gray-100 text-left">
       <tr>
         <th
-          className="text-slate-700 px-4 py-2 bg-[#E1E0D1] border-r border-white text-md "
+          className="text-[#282828] px-4 py-2 bg-[#E1E0D1] border-r border-white text-md "
           style={{ paddingInline: '10px',paddingBlock: '10px'  }}
         >
           Cubic capacity
         </th>
         <th
-          className="text-slate-700 px-4 py-2 border-b border-gray-200 bg-[#E1E0D1] text-md "
+          className="text-[#282828] px-4 py-2 border-b border-gray-200 bg-[#E1E0D1] text-md "
           style={{ paddingInline: '10px', paddingBlock: '10px' }}
         >
           Premium with effect from <br className="hidden md:block" /> 1st June 2022 (₹)
@@ -95,7 +95,7 @@ const Premium = () => {
     </thead>
     <tbody>
       {tableData.map((row, i) => (
-        <tr key={i} className="border-b-2 border-gray-200 text-slate-700" >
+        <tr key={i} className="border-b-2 border-gray-200 text-[#282828]" >
           <td style={{ paddingInline: '10px', paddingBlock: '10px' }}>
             {row.range}
           </td>
@@ -113,7 +113,7 @@ const Premium = () => {
 
         <div className="flex items-start gap-3">
           <div className="text-orange-600 font-bold text-3xl">2</div>
-          <p className="text-gray-700"  style={{paddingBottom : "12px"}}>
+          <p className="text-[#282828]"  style={{paddingBottom : "12px", fontSize: "16px"}}>
           <span className="font-medium">Third-party liability premium</span> this is stipulated by the Insurance Regulatory and Development Authority of India (IRDAI), and it is directly proportional to your cars cubic capacity.
           </p>
         </div>
@@ -122,7 +122,7 @@ const Premium = () => {
 
         <div className="flex items-start gap-3">
           <div className="text-orange-600 font-bold text-3xl">3</div>
-          <p className="text-gray-700 "  style={{paddingBottom : "12px"}}>
+          <p className="text-[#282828] "  style={{paddingBottom : "12px", fontSize: "16px"}}>
           <span className="font-medium">Third-party liability premium</span> this is stipulated by the Insurance Regulatory and Development Authority of India (IRDAI), and it is directly proportional to your cars cubic capacity.
           </p>
         </div>
@@ -135,7 +135,7 @@ const Premium = () => {
             <div className="text-gray-500 mt-1">→</div>
             <div>
               <h4 className="font-semibold text-gray-700">{factor.title}</h4>
-              <p className="text-sm text-gray-700" style={{marginBottom: "0.5rem", paddingBottom :"12px"}}>{factor.description}</p>
+              <p className="text-sm text-gray-700" style={{marginBottom: "0.5rem", paddingBottom :"12px", fontSize: "16px"}}>{factor.description}</p>
             </div>
           </div>
         ))}

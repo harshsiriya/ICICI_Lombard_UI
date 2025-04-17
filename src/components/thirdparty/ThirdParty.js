@@ -16,10 +16,10 @@ const ThirdParty = () => {
                   <table className="w-full border-collapse">
                     <thead>
                       <tr className="bg-[#E1E0D1] text-left">
-                        <th className="px-4 py-4 text-gray-700 border-r text-lg border-white" style={{paddingInline:"10px", paddingBlock:"20px"}}>
+                        <th className="px-4 py-4 text-[#282828] border-r text-lg border-white" style={{paddingInline:"10px", paddingBlock:"20px"}}>
                           Comprehensive Car Insurance
                         </th>
-                        <th className="px-4 py-4 text-gray-700 text-lg" style={{paddingInline:"10px", paddingBlock:"20px"}}>
+                        <th className="px-4 py-4 text-[#282828] text-lg" style={{paddingInline:"10px", paddingBlock:"20px"}}>
                           Third-Party Car Insurance
                         </th>
                       </tr>
@@ -78,7 +78,7 @@ const ThirdParty = () => {
         </div>
 
         <div className="flex justify-center items-center third-paryty-text container">
-          <div className="w-8/10 md:w-6/10 text-justify text-gray-700">
+          <div className="w-8/10 md:w-6/10 text-start text-gray-700">
             <p>
               Comprehensive car insurance is a more comprehensive policy that
               covers not only third-party liabilities but also damage to your

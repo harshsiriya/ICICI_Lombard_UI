@@ -37,7 +37,7 @@ const Models = () => {
             <div className="w-20 h-14 flex-shrink-0">
               <Image src={model.img} alt={model.label} width={90} height={90} style={{paddingTop: "0.3rem"}}/>
             </div>
-            <p className="text-sm font-medium">{model.label}</p>
+            <p className="text-[#282828] font-medium" style={{fontSize : "16px"}}>{model.label}</p>
           </div>
         ))}
       </div>

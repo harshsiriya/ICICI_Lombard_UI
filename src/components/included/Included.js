@@ -46,7 +46,7 @@ const Included = () => {
 
   return (
     <div className=" w-[93%] flex flex-col items-center justify-center container h-auto lg:h-[620px]">
-      <h2 className="text-2xl md:text-3xl lg:text-5xl  text-center mb-6" style={{ paddingTop : "1rem", paddingBottom : "2.5rem" }}>
+      <h2 className="text-2xl md:text-3xl lg:text-4xl  text-center mb-6" style={{ paddingTop : "2rem", paddingBottom : "2.5rem" }}>
         Whats included and whats not?
       </h2>
 

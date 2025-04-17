@@ -11,13 +11,13 @@ const Table = () => {
                 <table className="w-full border-collapse min-w-[600px]" >
                   <thead >
                     <tr className="bg-[#DDDCCB] text-left ">
-                      <th className="px-4 py-4 font-semibold border-r border-white text-slate-700" style={{ paddingInline: "20px", paddingBlock: "30px" }}>
+                      <th className="px-4 py-4 font-semibold border-r border-white text-[#000000]" style={{ paddingInline: "20px", paddingBlock: "30px" }}>
                         Product
                       </th>
-                      <th className="px-4 py-4 font-semibold border-r border-white text-slate-700" style={{ paddingInline: "20px", paddingBlock: "30px" }}>
+                      <th className="px-4 py-4 font-semibold border-r border-white text-[#000000]" style={{ paddingInline: "20px", paddingBlock: "30px" }}>
                         Product Code
                       </th>
-                      <th className="px-4 py-4 font-semibold text-slate-700" style={{ paddingInline: "20px", paddingBlock: "30px" }}>
+                      <th className="px-4 py-4 font-semibold text-[#000000]" style={{ paddingInline: "20px", paddingBlock: "30px" }}>
                         UIN Code
                       </th>
                     </tr>

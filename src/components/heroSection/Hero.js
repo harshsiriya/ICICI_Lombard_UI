@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="w-full lg:w-[35%] flex flex-col gap-18 hero1">
         <div style={{marginLeft : "10px"}}>
           <h1 className="text-6xl font-bold text-gray-900" style={{paddingBottom : "10px"}}>Car insurance</h1>
-          <h2 className="text-2xl font-semibold text-gray-900 mt-2" style={{paddingBottom : "10px"}}>
+          <h2 className="text-2xl font-base text-gray-900 mt-2" style={{paddingBottom : "10px"}}>
             Prices starting at just ₹2,094/yr
           </h2>
           <h5 className="text-sm text-gray-500 mt-1">
@@ -24,7 +24,7 @@ const Hero = () => {
 
         {/* Features */}
         <div className='hero1-img'>
-            <Image src={imageGroup} alt="img" style={{marginLeft : "10px"}} width={600} height={800} className='md:w-3xl' draggable={false} />
+            <Image src={imageGroup} alt="img" style={{marginLeft : "10px", marginRight : "-120px"}} width={800} height={800} className='md:w-3xl' draggable={false} />
         </div>
       </div>
 
@@ -61,7 +61,7 @@ const Hero = () => {
           >
             Get quote
           </button>
-          <a href="#" className="text-xs text-orange-500 hover:underline">
+          <a href="#" className="text-sm text-orange-500 hover:underline" >
             Retrieve quote
           </a>
 

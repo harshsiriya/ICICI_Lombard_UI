@@ -6,7 +6,7 @@ const Online = () => {
       <div className="w-full  bg-[#00305B] h-auto lg:h-[920px] flex flex-col items-center justify-center text-[#FFFFFF]">
         <div>
           <h1
-            className="text-5xl font-bold text-center"
+            className="text-4xl font-bold text-center"
             style={{ paddingBottom: "4rem", paddingTop : "3rem" }}
           >
             How to choose the right car insurance policy online?
@@ -18,7 +18,7 @@ const Online = () => {
             {[1, 2, 3, 4, 5, 6].map((num) => (
               <div
                 key={num}
-                className="flex flex-col lg:flex-row gap-3 items-center lg:items-start  justify-center border-2 h-[320px] border-[#065E9E] rounded-lg p-4 online-card"
+                className="flex flex-col lg:flex-row gap-3 items-center lg:items-start  justify-center border-2 h-[350px] border-[#065E9E] rounded-lg p-4 online-card"
                 
               >
                 <div className="text-6xl ml-1 text-orange-500" style={{paddingLeft : "1rem", paddingTop : "1rem"}}>{num}</div>

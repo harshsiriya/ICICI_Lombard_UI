@@ -15,7 +15,7 @@ const Footer = () => {
     <div>
       <div className=" bg-white border-t-1 border-slate-300 w-full ">
       <div className="flex gap-3 justify-between items-center container w-[93%]" style={{padding: "20px"}}>
-        <h3 className="text-sm"><a className="cursor-pointer" href="#">Home</a> <FontAwesomeIcon icon={faAngleRight} /> <a className="cursor-pointer" href="#">Motor Insurance</a> <FontAwesomeIcon icon={faAngleRight} /> <a className="cursor-pointer" href="#"><span className="text-slate-400">Car Insurance</span></a></h3>
+        <h3 className="text-sm text-[#282828]"><a className="cursor-pointer" href="#">Home</a> <FontAwesomeIcon icon={faAngleRight} /> <a className="cursor-pointer" href="#">Motor Insurance</a> <FontAwesomeIcon icon={faAngleRight} /> <a className="cursor-pointer" href="#"><span className="text-slate-400">Car Insurance</span></a></h3>
         <p className="text-sm">
             <a className="text-orange-600 underline hover:text-orange-700">Disclaimers</a>
         </p>
@@ -26,24 +26,24 @@ const Footer = () => {
       <div className=" flex flex-col md:flex-row justify-start container w-[93%] gap-6">
         <div className="flex-2 flex flex-col gap-6">
           <Image src={logo_dark} alt="logo" height={80} width={150} />
-          <h3 className="text-md font-semibold">
+          <h3 className="text-[#201D1D] " style={{fontSize : "15px"}}>
             ICICI Lombard General Insurance Company Limited,{" "}
           </h3>
-          <p className="text-sm">
+          <p className="text-[#201D1D]" style={{fontSize : "11px"}}>
             ICICI Lombard House, 414, Veer Savarkar Marg, Near Siddhi Vinayak
             Temple, Prabhadevi, Mumbai - 400025.
           </p>
-          <p className="text-sm">Email: customersupport@icicilombard.com Fax no - 022 61961323</p>
-          <div className="flex gap-8">
-            <Image src={fb} alt="img" height={12} width={12} />
-            <Image src={lin} alt="img" height={20} width={20} />
-            <Image src={x} alt="img" height={18} width={18} />
-            <Image src={yt} alt="img" height={20} width={20} />
-            <Image src={ig} alt="img" height={20} width={20} />
+          <p className="text-[#201D1D]" style={{fontSize : "11px"}}>Email: customersupport@icicilombard.com Fax no - 022 61961323</p>
+          <div className="flex gap-12">
+            <Image src={fb} alt="img" height={8} width={8} />
+            <Image src={lin} alt="img" height={13} width={13} />
+            <Image src={x} alt="img" height={10} width={10} />
+            <Image src={yt} alt="img" height={13} width={13} />
+            <Image src={ig} alt="img" height={13} width={13} />
           </div>
         </div>
-        <div className="flex-3 flex flex-col gap-4 items-start justify-start">
-          <p className="text-sm text-gray-700">
+        <div className="flex-4 flex flex-col gap-4 items-start justify-start">
+          <p className=" text-[#201D1D]" style={{fontSize : "12px"}}>
             ICICI Lombard General Insurance Ltd. is one of the largest private
             sector general insurance company in India offering insurance
             coverage for motor, health, travel, home, student travel and more.
@@ -51,7 +51,7 @@ const Footer = () => {
             issuance of policy copy online.
           </p>
 
-          <p className="text-sm text-gray-700">
+          <p className=" text-[#201D1D]" style={{fontSize : "12px"}}>
             ICICI trade logo displayed above belongs to ICICI Bank and is used
             by ICICI Lombard GIC Ltd. under license and Lombard logo belongs to
             ICICI Lombard GIC Ltd assigned by Northbridge Financial Corporation

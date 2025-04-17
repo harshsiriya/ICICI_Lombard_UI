@@ -45,10 +45,10 @@ const Things = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1 gap-8 items-center w-full" style={{paddingBottom : "1.5rem"}}>
         {tips.map((tip, index) => (
           <div key={index} className="bg-white shadow-sm rounded-lg p-5 flex gap-6 items-center h-[187px]">
-            <Image src={tip.icon} alt="icon" width={50} height={50} style={{paddingLeft: "25px"}} />
+            <Image src={tip.icon} alt="icon" width={0} height={0} style={{paddingLeft: "25px", height : "90px", width : "90px", paddingTop : "3rem", }} className='self-start' />
             <div style={{paddingRight : "25px"}}>
               <h4 className="font-semibold mb-1 text-gray-900" style={{paddingBlock : "0.5rem"}}>{tip.title}</h4>
-              <p className="text-sm text-gray-600" style={{paddingBottom : "1rem"}}>{tip.description}</p>
+              <p className=" text-gray-600" style={{paddingBottom : "1rem", fontSize : "16px"}}>{tip.description}</p>
             </div>
           </div>
         ))}
