@@ -272,9 +272,9 @@ const Answer = () => {
   const [activeTab, setActiveTab] = useState('General')
 
   return (
-    <div className="p-6 md:p-10 w-full bg-[#F8F6F6] flex flex-col justify-center items-center h-auto xl:h-[1500px]" style={{paddingBottom : "1.5rem"}}>
-      <div className='container w-[93%]'>
-      <h2 className="text-xl md:text-3xl xl:text-4xl text-center mb-8" style={{paddingBottom:"4rem", paddingTop:"3rem"}}>
+    <div className="p-6 md:p-10 w-full bg-[#F8F6F6] flex flex-col justify-center items-center h-auto xl:h-[1500px] answer-section" style={{paddingBottom : "1.5rem"}}>
+      <div className='container w-full lg:w-[93%]'>
+      <h2 className="text-xl md:text-3xl xl:text-4xl text-center mb-8" style={{paddingBottom:"3rem", paddingTop:"4rem"}}>
         Get answers to common questions about car insurance policy
       </h2>
 
@@ -298,7 +298,7 @@ const Answer = () => {
       </div>
 
       {/* FAQ Content */}
-      <div className="space-y-8 text-justify w-[85%] md:w-[60%]" style={{paddingInline: "25px", paddingBottom:"20px"}}>
+      <div className="space-y-8 text-justify w-full md:w-[60%]" style={{paddingInline: "25px", paddingBottom:"20px"}}>
         {faqData[activeTab].length === 0 ? (
           <p className="text-gray-600">Content coming soon...</p>
         ) : (
@@ -307,7 +307,7 @@ const Answer = () => {
               <h3 className="text-md md:text-lg font-semibold text-[#282828] mb-1" style={{marginTop: "1.5rem"}}>
                 {faq.question}
               </h3>
-              <div ><p className="text-[#282828] text-sm md:text-base" style={{lineHeight : "28px"}}>{faq.answer}</p></div>
+              <div ><p className="text-[#282828] general-text" style={{lineHeight : "28px"}}>{faq.answer}</p></div>
               {faq.list && (
                 <ul className="mt-3 list-none space-y-1 pl-4">
                   {faq.list.map((item, i) => (

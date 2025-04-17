@@ -13,26 +13,26 @@ const policies = [
     description1:
       'Comprehensive car insurance, also known as a private car package policy, is a type of auto insurance that provides complete coverage for your vehicle. It is an optional car insurance policy but is highly recommended for car owners who want the best protection for their four-wheelers.',
     description2:
-      'Comprehensive car insurance covers damage caused by natural disasters, accidents, theft, fire, and other such incidents. It covers damages to both your vehicle and third-party vehicles and property. This car insurance policy also covers third-party liabilities, which will cover any legal costs or compensation you may be liable for in case of an accident caused due to your fault. In addition, some comprehensive policies also offer additional benefits such as roadside assistance, towing service and more. Even though comprehensive insurance policies tend to be more expensive than Third-Party Liability or Standalone Own Damage policies, but they offer broader coverage.',
+      'Comprehensive car insurance covers damage caused by natural disasters, accidents, theft, fire, and other such incidents. It covers damages to both your vehicle and third-party vehicles and property. This car insurance policy also covers third-party liabilities, which will cover any legal costs. In addition, some comprehensive policies also offer additional benefits such as roadside assistance, towing service and more. Even though comprehensive insurance policies tend to be more expensive than Third-Party Liability or Standalone Own Damage policies, but they offer broader coverage.',
   },
   {
     title: 'Third-party car insurance policy',
     description1:
-      'Comprehensive car insurance covers damage caused by natural disasters, accidents, theft, fire, and other such incidents. It covers damages to both your vehicle and third-party vehicles and property. This car insurance policy also covers third-party liabilities, which will cover any legal costs or compensation you may be liable for in case of an accident caused due to your fault. In addition, some comprehensive policies also offer additional benefits such as roadside assistance, towing service and more. Even though comprehensive insurance policies tend to be more expensive than Third-Party Liability or Standalone Own Damage policies, but they offer broader coverage.',
+      'Comprehensive car insurance covers damage caused by natural disasters, accidents, theft, fire, and other such incidents. It covers damages to both your vehicle and third-party vehicles and property. This car insurance policy also covers third-party liabilities, which will cover any legal costs. In addition, some comprehensive policies also offer additional benefits such as roadside assistance, towing service and more. Even though comprehensive insurance policies tend to be more expensive than Third-Party Liability or Standalone Own Damage policies, but they offer broader coverage.',
     description2:
       'It covers damage caused by natural disasters, accidents, theft, fire, and more. It includes third-party liabilities and can offer benefits like roadside assistance, towing service, etc. Though more expensive, it provides extensive coverage.',
   },
   {
     title: 'Standalone own damage policy',
     description1:
-      'Comprehensive car insurance covers damage caused by natural disasters, accidents, theft, fire, and other such incidents. It covers damages to both your vehicle and third-party vehicles and property. This car insurance policy also covers third-party liabilities, which will cover any legal costs or compensation you may be liable for in case of an accident caused due to your fault. In addition, some comprehensive policies also offer additional benefits such as roadside assistance, towing service and more. Even though comprehensive insurance policies tend to be more expensive than Third-Party Liability or Standalone Own Damage policies, but they offer broader coverage.',
+      'Comprehensive car insurance covers damage caused by natural disasters, accidents, theft, fire, and other such incidents. It covers damages to both your vehicle and third-party vehicles and property. This car insurance policy also covers third-party liabilities, which will cover any legal costs. In addition, some comprehensive policies also offer additional benefits such as roadside assistance, towing service and more. Even though comprehensive insurance policies tend to be more expensive than Third-Party Liability or Standalone Own Damage policies, but they offer broader coverage.',
     description2:
       'It covers damage caused by natural disasters, accidents, theft, fire, and more. It includes third-party liabilities and can offer benefits like roadside assistance, towing service, etc. Though more expensive, it provides extensive coverage.',
   },
   {
     title: 'Pay-as-you-drive policy',
     description1:
-    'Comprehensive car insurance covers damage caused by natural disasters, accidents, theft, fire, and other such incidents. It covers damages to both your vehicle and third-party vehicles and property. This car insurance policy also covers third-party liabilities, which will cover any legal costs or compensation you may be liable for in case of an accident caused due to your fault. In addition, some comprehensive policies also offer additional benefits such as roadside assistance, towing service and more. Even though comprehensive insurance policies tend to be more expensive than Third-Party Liability or Standalone Own Damage policies, but they offer broader coverage.',
+    'Comprehensive car insurance covers damage caused by natural disasters, accidents, theft, fire, and other such incidents. It covers damages to both your vehicle and third-party vehicles and property. This car insurance policy also covers third-party liabilities, which will cover any legal costs. In addition, some comprehensive policies also offer additional benefits such as roadside assistance, towing service and more. Even though comprehensive insurance policies tend to be more expensive than Third-Party Liability or Standalone Own Damage policies, but they offer broader coverage.',
   description2:
     'It covers damage caused by natural disasters, accidents, theft, fire, and more. It includes third-party liabilities and can offer benefits like roadside assistance, towing service, etc. Though more expensive, it provides extensive coverage.',
   },
@@ -68,7 +68,7 @@ const Swapper = () => {
      
     >
       <div className='container mx-auto flex flex-col items-center justify-center px-4'>
-        <h1 className='text-xl sm:text-2xl lg:text-4xl font-medium text-center mb-6'  style={{paddingBlock:"50px"}}>
+        <h1 className='text-xl sm:text-2xl lg:text-4xl font-medium text-center mb-6 swapper-main-title'  style={{paddingBlock:"50px"}}>
           What are the different types of car insurance policies?
         </h1>
 
@@ -101,13 +101,13 @@ const Swapper = () => {
                   />
                 </div>
                 <div className='w-full md:w-[75%] swapper-mq'> 
-                  <h2 className=' font-medium ' style={{paddingBottom:"10px", fontSize : "20px"}}>
+                  <h2 className='font-medium swapper-title' style={{paddingBottom:"10px", fontSize : "20px"}}>
                     {policies[currentIndex].title}
                   </h2>
-                  <p className=' text-[#282828]' style={{paddingRight : "50px", paddingBottom:"15px", fontSize : "16px", lineHeight : "24px"}}>
+                  <p className=' text-[#282828] swapper-d1' >
                     {policies[currentIndex].description1}
                   </p>
-                  <p className='text-[#282828]' style={{paddingRight : "50px" , fontSize : "16px", lineHeight : "24px"}}>
+                  <p className='text-[#282828] swapper-d2' >
                     {policies[currentIndex].description2}
                   </p>
                 </div>

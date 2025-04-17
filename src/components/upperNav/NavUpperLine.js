@@ -10,11 +10,9 @@ const NavUpperLine = () => {
     <div className='bg-white'>
       <div className=' flex justify-between items-center h-12 w-full NavUpperLine text-sm font-light max-w-[1440px]' style={{marginInline:"auto"}}>
       <div className='flex NavUpperLine-right'>
-        {/* <img src={Call} alt="call" style={{ marginLeft: '25px'}} /> */}
         <Image src={Call} alt="call" style={{ marginLeft: '10px'}} width={20} height={20}/>
         <span style={{marginInline : "10px"}}> 1800 2666 </span>
         <span> | </span>
-        {/* <img src={Fill} alt="call" style={{ marginLeft: '10px'}} /> */}
         <Image src={Fill} alt="call" style={{ marginLeft: '10px'}} />
         <span style={{marginInline : "10px"}}> Call Back </span>
         <span> | </span>

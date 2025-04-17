@@ -71,7 +71,7 @@ body{
 }
 
 .third-party{
-  margin-left: 10%;
+  margin-inline:5%;
 }
 
 .third-paryty-text{
@@ -93,17 +93,68 @@ body{
   max-width: 1440px;
 }
 
+.insurance-p{
+  padding-right: 42px;
+  font-size: 16px;
+  line-height: 24px;
+}
 
-@media screen and (max-width: 1024px) {
+.swapper-d1{
+  padding-right: 50px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.swapper-d2{
+  padding-right: 50px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.third-party-table{
+  margin-inline: 15%;
+}
+
+.things-box-text{
+  padding-right: 25px;
+}
+
+.general-text{
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+@media screen and (max-width: 1023px) {
+  .hero{
+    padding: 25px;
+  }
+
+  .third-party{
+    margin-inline: 0px;
+  }
+  
+
   .hero1{
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
   .hero1-img{
     display: none;
   }
   .hero3{
     margin-inline: 0;
+  }
+
+  .insurance-p{
+    padding-right: 10px;
+    font-size: 14px;
+  }
+
+  .things-box-text{
+    padding-block: 25px;
   }
 
   .swapper-mq{
@@ -113,6 +164,14 @@ body{
 
   .swapper-mq1{
     margin-bottom: 50px;
+  }
+
+  .rating-button{
+    margin-bottom: 2rem;
+  }
+
+  .rating-name{
+    font-size: 18px;
   }
   
   .options-hidden{
@@ -135,10 +194,52 @@ body{
 
 @media screen and (max-width: 768px) {
   .NavUpperLine{
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .options-hidden{
     display: none;
+  }
+
+  .online-card{
+    height: 170px;
+  }
+
+  .general-text{
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .swapper-main-title{
+    padding-inline: 15px;
+  }
+
+  .things-section{
+    padding: 20px;
+  }
+ 
+  .third-party-table{
+    margin-inline: 5%;
+  }
+
+  .answer-section{
+    padding-inline: 20px;
+  }
+
+  .swapper-d1{
+    padding-right: 10px;
+  }
+  .swapper-d2{
+    padding-right: 10px;
+  }
+
+
+  .insurance{
+    padding-inline: 20px;
+  }
+
+  .premium-section{
+    padding-inline: 20px;
   }
 
   .included{
@@ -152,24 +253,73 @@ body{
     padding-top: 25px;
   }
 
+  .swapper-title{
+    text-align: center;
+  }
+
   .swapper-mq{
     padding-inline: 25px;
+  }
+
+  .rating-name{
+    font-size: 16px;
   }
 
   .premium-flex{
     display: flex;
     flex-direction: column;
   }
-  
-}
 
-@media screen and (max-width: 500px) {
   .NavUpperLine-left{
     display: none;
   }
+  
 }
 
+
+
 @media screen and (max-width:450px) {
+
+  .swapper-title{
+    text-align: start;
+  }
+
+  .hero{
+    padding: 20px;
+  }
+
+  .things-section{
+    padding: 15px;
+  }
+
+  .answer-section{
+    padding-inline: 15px;
+  }
+
+  .insurance-p{
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .rating-name{
+    font-size: 13px;
+  }
+
+
+  .premium-section{
+    padding-inline: 15px;
+  }
+
+  .swapper-d1{
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  .swapper-d2{
+    font-size: 13px;
+    line-height: 18px;
+  }
+
   .swapper{
     margin-inline: 0;
   }

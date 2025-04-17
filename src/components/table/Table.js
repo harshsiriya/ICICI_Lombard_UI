@@ -2,7 +2,7 @@ import React from 'react'
 
 const Table = () => {
   return (
-    <div className="w-full container flex justify-center px-4 h-auto lg:h-[310px] flex flex-col justify-center items-center" style={{marginBlock : "1.5rem"}}>
+    <div className="w-full container px-4 h-auto lg:h-[310px] flex flex-col justify-center items-center" style={{marginBlock : "1.5rem"}}>
       <div className="w-[87%]">
         <div className="flex justify-center items-center p-4">
           <div className="flex flex-col space-y-1 w-full">
@@ -23,7 +23,7 @@ const Table = () => {
                     </tr>
                   </thead>
                   <tbody className="text-start text-gray-800">
-                    <tr className="bg-white">
+                    <tr className="bg-white general-text">
                       <td className="px-4 py-4 border-r border-white" style={{ paddingInline: "20px", paddingBlock: "20px" }}>
                         Private car package policy
                       </td>
@@ -35,7 +35,7 @@ const Table = () => {
                       </td>
                     </tr>
                     <tr className="bg-[#F5F6F6]">
-                      <td className="px-4 py-4 border-r border-white" style={{ paddingInline: "20px", paddingBlock: "20px" }}>
+                      <td className="px-4 py-4 border-r border-white general-text" style={{ paddingInline: "20px", paddingBlock: "20px" }}>
                         Stand-alone own damage private car package policy
                       </td>
                       <td className="px-4 py-4" style={{ paddingInline: "20px", paddingBlock: "20px" }}>
@@ -46,7 +46,7 @@ const Table = () => {
                       </td>
                     </tr>
                     <tr className="bg-white">
-                      <td className="px-4 py-4 border-r border-white" style={{ paddingInline: "20px", paddingBlock: "20px" }}>
+                      <td className="px-4 py-4 border-r border-white general-text" style={{ paddingInline: "20px", paddingBlock: "20px" }}>
                         Private car liability policy
                       </td>
                       <td className="px-4 py-4" style={{ paddingInline: "20px", paddingBlock: "20px" }}>

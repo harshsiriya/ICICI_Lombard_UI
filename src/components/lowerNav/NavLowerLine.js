@@ -22,7 +22,7 @@ const NavLowerLine = () => {
             <Menu2 option="Two Wheeler Insurance" />
             <Menu2 option="Health Insurance" />
             <Menu2 option="Travel Insurance" />
-            <Menu2 option="Other Insurance" />
+            {/* <Menu2 option="Other Insurance" /> */}
             <Menu2 option="Claims" />
           </div>
         </div>
@@ -55,7 +55,7 @@ const NavLowerLine = () => {
           <Menu2 option="Other Insurance" />
           <Menu2 option="Claims" />
           {/* Mobile Login Button */}
-          <button className="white flex items-center justify-center gap-1 text-xs  hover:text-orange-600">
+          <button className="white flex items-center justify-center gap-1 text-xs  hover:text-orange-600" style={{paddingBottom : "1rem"}}>
             Login
             <ChevronRightIcon className="size-5 text-white text-xs" />
           </button>

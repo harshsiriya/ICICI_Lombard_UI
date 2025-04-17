@@ -47,7 +47,7 @@ const Search = () => {
           {tags.map((tag, index) => (
             <span
               key={index}
-              className="bg-white text-gray-700 px-4 py-2 rounded-full text-sm hover:bg-orange-500  hover:text-white transition"
+              className="bg-white text-gray-700 px-4 py-2 rounded-full general-text hover:bg-orange-500  hover:text-white transition"
               style={{paddingBlock: '0.5rem', paddingInline: '1rem'}}
             >
               {tag}

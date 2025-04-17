@@ -72,7 +72,7 @@ const Rating = () => {
   });
 
   return (
-    <div className="px-4 md:px-12 py-12 text-center h-auto lg:h-[682px] flex flex-col justify-center items-center">
+    <div className="px-4 md:px-12 py-12 text-center h-auto lg:h-[682px] flex flex-col justify-center items-center answer-section">
       <h2 className="text-3xl md:text-4xl" style={{paddingBottom : "1rem", marginTop : "4rem"}}>Ratings and Reviews</h2>
 
 
@@ -113,12 +113,12 @@ const Rating = () => {
               <div key={idx} className="text-left flex flex-col gap-4">
                 <div className="flex items-center justify-between space-x-4">
                   <div className='flex gap-2'>
-                  <p className="font-bold text-xl text-gray-700 border-r border-0.5-slate-50" style={{paddingRight : "10px"}}>{review.name}</p>
+                  <p className="font-bold text-xl text-gray-700 border-r border-0.5-slate-50 rating-name" style={{paddingRight : "10px"}}>{review.name}</p>
                   <Image src={review.ratingImg} alt="stars" width={80} height={16} />
                   </div>
                   <Image src={quote} alt="quote" width={65} height={65} />
                 </div>
-                <p className="text-gray-700 text-md">{review.description}</p>
+                <p className="text-gray-700 general-text">{review.description}</p>
               </div>
             ))}
           </div>
@@ -148,7 +148,7 @@ const Rating = () => {
         </div>
 
         <button
-          className="mt-6 px-6 py-2 border border-orange-500 text-orange-500 font-semibold rounded-xl hover:bg-orange-500 hover:text-white transition"
+          className="mt-6 px-6 py-2 border border-orange-500 text-orange-500 font-semibold rounded-xl hover:bg-orange-500 hover:text-white transition rating-button"
           style={{ padding: '15px', marginTop: '1rem' }}
         >
           Read all reviews

@@ -21,7 +21,7 @@ const models = [
 
 const Models = () => {
   return (
-    <div className="bg-[#00305B] w-full h-auto lg:h-[400px] flex flex-col justify-center items-center text-white py-12 px-6 md:px-12">
+    <div className="bg-[#00305B] w-full h-auto lg:h-[400px] flex flex-col justify-center items-center text-white py-12 px-6 md:px-12 answer-section">
         <div  className='w-[93%] container flex flex-col gap-3 lg:gap-6'>
       <h2 className="text-2xl lg:text-4xl font-semibold text-center" style={{paddingTop:"1.5rem",  paddingBottom: '0.75rem', paddingInline : "2rem"}}>
         Car Insurance for Popular Models in India

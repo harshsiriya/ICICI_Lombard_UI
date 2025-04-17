@@ -8,7 +8,7 @@ const Hero = () => {
 
 
   return (
-    <section className="flex flex-col lg:flex-row items-center h-[95%] max-h-screen justify-between px-6 py-10 bg-white mx-auto gap-6 container" style={{marginTop : "50px", paddingBottom : "50px"}}>
+    <section className="flex flex-col lg:flex-row items-center h-auto lg:h-[95%]  justify-between px-6 py-10 bg-white mx-auto hero gap-6 container" style={{marginTop : "50px", paddingBottom : "50px"}}>
       
       {/* Left Content */}
       <div className="w-full lg:w-[35%] flex flex-col gap-18 hero1">
@@ -30,7 +30,7 @@ const Hero = () => {
 
       {/* Middle Image */}
       <div className="w-full lg:w-[30%] flex justify-center my-8 lg:my-0">
-        <Image src={carimg} alt="Car" width={400} height={500} draggable={false}/>
+        <Image src={carimg} alt="Car" width={400} height={500} draggable={false} className='w-[80%] lg:w-full'/>
       </div>
 
       {/* Right Form */}

@@ -7,7 +7,7 @@ import Image from 'next/image'
 const Details = () => {
   return (
     <div className='text-center details bg-[#F8F6F6] py-10 lg:h-[300px] md:h-[400px] h-[550px]'>
-      <h1 className='text-4xl heading-details mb-2' style={{paddingTop : "4rem"}}>Why our customers love us?</h1>
+      <h1 className='text-3xl lg:text-4xl heading-details mb-2' style={{paddingTop : "4rem"}}>Why our customers love us?</h1>
       <p className='text-sm mb-6 text-gray-700'>And, we think you will too.</p>
 
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-[93%] md:w-[93%] mx-auto grid-details container'>

@@ -8,7 +8,7 @@ const Included = () => {
   const [activeTab, setActiveTab] = useState('inclusions');
 
   const inclusions = [
-    'Coverage for natural disasters like earthquakes, floods, fires and storms',
+    'Coverage from all natural disasters',
     'Cashless repairs in 5100+ network garages',
     'Coverage for theft, accidents and terrorist activities',
     'No claim bonus up to 50%',
@@ -45,7 +45,7 @@ const Included = () => {
   ];
 
   return (
-    <div className=" w-[93%] flex flex-col items-center justify-center container h-auto lg:h-[620px]">
+    <div className="w-[90%] lg:w-[93%] flex flex-col items-center justify-center container h-auto lg:h-[620px]">
       <h2 className="text-2xl md:text-3xl lg:text-4xl  text-center mb-6" style={{ paddingTop : "2rem", paddingBottom : "2.5rem" }}>
         Whats included and whats not?
       </h2>
@@ -96,14 +96,14 @@ const Included = () => {
 
       {activeTab === 'exclusions' && (
         <>
-          <h3 className="text-lg font-semibold mb-4  w-full" style={{ paddingTop: '2.5rem', paddingBottom: "2rem"}}>
+          <h3 className="text-lg font-semibold mb-4 text-start w-full" style={{ paddingTop: '2.5rem', paddingBottom: "2rem"}}>
             Whats not included:
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-8 mb-8  w-full">
             {exclusions.map((item, index) => (
               <div key={index} className="flex items-start gap-2 text-lg">
-                <XCircle className="text-red-500 mt-1" size={20} style={{paddingTop:"6px"}}/>
-                <span className="text-gray-700">{item}</span>
+                <Image src={correct} alt='' style={{paddingTop:"12px"}}/>
+                <span className="text-gray-700 " style={{paddingTop : "6px"}}>{item}</span>
               </div>
             ))}
           </div>
@@ -113,8 +113,8 @@ const Included = () => {
 
       {/* Policy Links */}
       <div className="flex flex-col lg:flex-row border-t border-slate-400 pt-4 gap-3 text-center lg:text-start w-full" style={{ paddingBlock: '3rem' }}>
-        <p className="text-sm text-gray-600 mb-2 font-medium">Policy documents:</p>
-        <div className="flex flex-wrap gap-6 text-sm">
+        <p className="general-text text-gray-600 mb-2 font-medium">Policy documents:</p>
+        <div className="flex flex-wrap gap-6 general-text">
           {policyLinks.map((link, i) => (
             <p key={i} className="w-full sm:w-auto">
               <a  href={link.url} className="text-orange-600 underline hover:text-orange-700 text-center">
