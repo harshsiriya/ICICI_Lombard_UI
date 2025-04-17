@@ -27,10 +27,10 @@ const Table = () => {
                       <td className="px-4 py-4 border-r border-white" style={{ paddingInline: "20px", paddingBlock: "20px" }}>
                         Private car package policy
                       </td>
-                      <td className="px-4 py-4" style={{ paddingInline: "20px", paddingBlock: "20px" }}>
+                      <td className="px-4 py-4 general-text" style={{ paddingInline: "20px", paddingBlock: "20px" }}>
                         3001
                       </td>
-                      <td className="px-4 py-4" style={{ paddingInline: "20px", paddingBlock: "20px" }}>
+                      <td className="px-4 py-4 general-text" style={{ paddingInline: "20px", paddingBlock: "20px" }}>
                         IRDAN115RP0017
                       </td>
                     </tr>
@@ -38,10 +38,10 @@ const Table = () => {
                       <td className="px-4 py-4 border-r border-white general-text" style={{ paddingInline: "20px", paddingBlock: "20px" }}>
                         Stand-alone own damage private car package policy
                       </td>
-                      <td className="px-4 py-4" style={{ paddingInline: "20px", paddingBlock: "20px" }}>
+                      <td className="px-4 py-4 general-text" style={{ paddingInline: "20px", paddingBlock: "20px" }}>
                         3001/O
                       </td>
-                      <td className="px-4 py-4" style={{ paddingInline: "20px", paddingBlock: "20px" }}>
+                      <td className="px-4 py-4 general-text" style={{ paddingInline: "20px", paddingBlock: "20px" }}>
                         IRDAN115RP0001
                       </td>
                     </tr>
@@ -49,10 +49,10 @@ const Table = () => {
                       <td className="px-4 py-4 border-r border-white general-text" style={{ paddingInline: "20px", paddingBlock: "20px" }}>
                         Private car liability policy
                       </td>
-                      <td className="px-4 py-4" style={{ paddingInline: "20px", paddingBlock: "20px" }}>
+                      <td className="px-4 py-4 general-text" style={{ paddingInline: "20px", paddingBlock: "20px" }}>
                         3001/A
                       </td>
-                      <td className="px-4 py-4" style={{ paddingInline: "20px", paddingBlock: "20px" }}>
+                      <td className="px-4 py-4 general-text" style={{ paddingInline: "20px", paddingBlock: "20px" }}>
                         IRDAN115RP0012
                       </td>
                     </tr>
