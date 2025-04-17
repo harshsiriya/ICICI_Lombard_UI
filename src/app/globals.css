@@ -125,10 +125,16 @@ body{
   line-height: 24px;
 }
 
+.hero{
+  padding-bottom: 50px;
+}
+
 
 @media screen and (max-width: 1023px) {
   .hero{
     padding: 25px;
+    margin-top: 20px;
+    padding-bottom: 30px;
   }
 
   .third-party{
@@ -286,6 +292,7 @@ body{
 
   .hero{
     padding: 20px;
+    margin-top: 15px;
   }
 
   .things-section{

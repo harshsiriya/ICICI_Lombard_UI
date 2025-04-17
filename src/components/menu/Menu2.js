@@ -17,7 +17,7 @@ const Menu2 = ({ option }) => {
 
       <MenuItems
         transition
-        className="absolute left-[50%] z-10 mt-2 w-56 origin-top-left rounded-md bg-white ring-1 shadow-lg ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in overflow-hidden"
+        className="absolute left-[15%] top-[100%] z-10 mt-2 w-[70%] sm:w-56 origin-top-left rounded-md bg-white ring-1 shadow-lg ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in overflow-hidden "
       >
         <div className="py-1">
           <MenuItem>

@@ -8,11 +8,11 @@ const Hero = () => {
 
 
   return (
-    <section className="flex flex-col lg:flex-row items-center h-auto lg:h-[95%]  justify-between px-6 py-10 bg-white mx-auto hero gap-6 container" style={{marginTop : "50px", paddingBottom : "50px"}}>
+    <section className="flex flex-col lg:flex-row items-center h-auto lg:h-[95%]  justify-between px-6 py-10 bg-white mx-auto hero gap-6 container">
       
       {/* Left Content */}
       <div className="w-full lg:w-[35%] flex flex-col gap-18 hero1">
-        <div style={{marginLeft : "10px"}}>
+        <div style={{marginLeft : "10px", paddingBottom : "15px"}}>
           <h1 className="text-6xl font-bold text-gray-900" style={{paddingBottom : "10px"}}>Car insurance</h1>
           <h2 className="text-2xl font-base text-gray-900 mt-2" style={{paddingBottom : "10px"}}>
             Prices starting at just ₹2,094/yr

@@ -304,7 +304,7 @@ const Answer = () => {
         ) : (
           faqData[activeTab].map((faq, index) => (
             <div key={index}>
-              <h3 className="text-md md:text-lg font-semibold text-[#282828] mb-1" style={{marginTop: "1.5rem"}}>
+              <h3 className="text-md md:text-lg font-bold text-[#282828] mb-1" style={{marginTop: "1.5rem"}}>
                 {faq.question}
               </h3>
               <div ><p className="text-[#282828] general-text" style={{lineHeight : "28px"}}>{faq.answer}</p></div>
