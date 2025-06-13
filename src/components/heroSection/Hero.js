@@ -8,7 +8,7 @@ const Hero = () => {
 
 
   return (
-    <section className="flex flex-col lg:flex-row items-center h-auto lg:h-[95%]  justify-between px-6 py-10 bg-white mx-auto hero gap-6 container">
+    <section className="flex flex-col lg:flex-row items-center h-auto lg:h-[95%]  justify-between px-6 py-10 bg-white mx-auto hero gap-6 container" style={{marginTop : "25px"}}>
       
       {/* Left Content */}
       <div className="w-full lg:w-[35%] flex flex-col gap-18 hero1">
